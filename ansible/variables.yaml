@@ -1,0 +1,11 @@
+- name: variables
+  hosts: local
+  connection: local
+  vars: 
+    PROJECT: "Sabre"
+    ENVIRONMENT: "Prod"
+
+  tasks:
+    - name: printing the variables
+      ansible.builtin.debug:
+        msg: "Project is {{ PROJECT }} Environment is {{ ENVIRONMENT }}"
