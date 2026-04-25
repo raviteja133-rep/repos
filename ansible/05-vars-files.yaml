@@ -1,8 +1,8 @@
-- name:
+- name: variables
   hosts: local
   connection: local
   var_files:
-  - project.yaml
+    - project.yaml
 
   tasks:
     - name: printing data in var_files
