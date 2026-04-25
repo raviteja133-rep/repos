@@ -5,6 +5,6 @@
     - project.yaml
 
   tasks:
-    - name: printing data in var_files
+    - name: printing data from var files
       ansible.builtin.debug:
         msg: "Project is {{ PROJECT }} Environment is {{ ENVIRONMENT }}"  
