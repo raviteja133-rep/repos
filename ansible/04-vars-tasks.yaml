@@ -10,4 +10,8 @@
       vars:
         PROJECT: "BNY"
       ansible.builtin.debug:
-        msg: " Project is {{ PROJECT }} Environment is {{ ENVIRONMENT }} "  
+        msg: " Project is {{ PROJECT }} Environment is {{ ENVIRONMENT }} "
+
+    - name: printing the variables
+      ansible.builtin.debug:
+        msg: "Project is {{ PROJECT }} Environment is {{ ENVIRONMENT }}"      
