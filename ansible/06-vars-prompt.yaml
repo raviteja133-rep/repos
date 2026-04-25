@@ -1,0 +1,17 @@
+- name: variables
+  hosts: local
+  connection: local
+  vars_prompt: 
+    - name: PROJECT
+      prompt: What is your Project?
+      private: false
+
+    - name: ENVIRONMENT
+      prompt:  What is your Environment?
+      private: false
+
+
+  tasks:
+    - name: printing prompts
+      ansible.builtin.debug:
+        msg: "Project is {{ PROJECT }} Environment is {{ ENVIRONMENT }}"    
