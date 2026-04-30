@@ -1,6 +1,6 @@
 - name: installing nginx
-  hosts: dev
-  become: yes
+  hosts: local
+  connection: local
   tasks:
     - name: install nginx
       ansible.builtin.dnf:
