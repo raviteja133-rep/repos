@@ -1,5 +1,5 @@
 - name: installing nginx
-  hosts: web
+  hosts: dev
   become: yes
   tasks:
     - name: install nginx
@@ -10,5 +10,5 @@
     - name: start and enable nginx
       ansible.builtin.service:
           name: nginx
-          state: restarted
           enabled: yes
+          state: restarted
